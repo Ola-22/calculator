@@ -1,0 +1,98 @@
+:root {
+    --blueColor: #1E90FF;
+    --greenColor: green;
+    --yellowColor:darkgoldenrod;
+    --grayColor: gray;
+  }
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+ 
+  .App {
+    line-height: 2.7;
+    font-family: Roboto;
+  }
+  .cart {
+    background-color: whitesmoke;
+    min-height: 8vh;
+  }
+  .cart svg{
+  margin: 0 15px 0 20px;
+  }
+  .cart-box button{
+    color: #fff;
+    background-color: var(--blueColor);
+    border-radius: 15px;
+    padding: 2px 17px;
+    border: none;
+    margin-right: 10px;
+  }
+  .refresh, .counter{
+    margin: 5px 0 0 50vh;
+  }
+  .refresh .refreshIcon{
+    border: 1px solid var(--greenColor);
+    background-color: var(--greenColor);
+    color: #fff;
+    font-size: 10px;
+    border-radius: 5px;
+    padding: 5px 8px;
+  }
+  .refresh .refreshIcon:hover{
+    cursor: pointer;
+  }
+  .counter .counterBox{
+    background-color: var(--yellowColor);
+    margin: 0 20px 0 0;
+    display: inline-block;
+    width: 50px;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 5px;
+    height: 27px;
+    font-weight: bold;
+    position: relative;
+    
+  }
+
+  .counter .changeBox{
+    background-color: var(--blueColor);
+    width: 30px;
+    color: #fff;
+    margin: 0 20px 0 0;
+    display: inline-block;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 5px;
+    height: 27px;
+  }
+  .counter .inc, .counter .dec{
+    border: 2px solid #fff;
+    background: #fff;
+    font-size: 10px;
+    height: 1.4em;
+    width: 1.5em;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+  }
+  .outPlus, .outDec{
+    border: 1px solid var(--grayColor);
+    padding: 3px 5px;
+    background-color: var(--grayColor);
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  .outDec{
+    border: 1px solid var(--blueColor);
+    background-color: var(--blueColor);
+    /* opacity: .7; */
+  }
+
+  .outDec:checked{
+    outline: 1px solid gray;
+  }
+
